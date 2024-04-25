@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Anton&family=Gabarito:wght@600&display=swap');
+
+:root {
+    --heading-font: 'Anton', serif;
+    --paragrah-font: 'Gabarito', serif;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1000px;
+
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: goldenrod;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: navy;
+    padding: 20px;
+    font-size: 22px;
+    font-family: 'Anton', serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: 1px solid black;
+}
+
+header {
+    padding: 20px;
+    background-color: blanchedalmond;
+    margin: 1rem auto;
+    display: flex;
+    border-bottom: 1px solid #111;
+    max-width: 1000px;
+}
+
+header span {
+    font-family: var(--heading-font);
+    font-size: 3rem;
+    text-align: center;
+    flex: 1 1 100%;
+}
+
+.parent h2 {
+    background-color: burlywood;
+    color: black;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+}
+
+.parent section {
+    border: 1px solid #313131;
+    background-color: #e9f5e9;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.parent {
+    margin: 1rem;
+}
+
+.parent a {
+    font-family: var(--paragrah-font);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.parent ul {
+    list-style-type: none;
+}
+
+.parent ul,
+.parent p {
+    padding: 10px;
+}
+
+footer {
+    display: block;
+    margin: 1px auto;
+    width: 650px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Gabarito', serif;
+    color: black;
+    border-top: 1px solid #111;
+}

@@ -79,14 +79,27 @@ header span {
 }
 
 .parent a {
+    font-size: 1rem;
     font-family: var(--paragrah-font);
-    text-decoration: none;
-    font-size: 1.5rem;
 }
 
-.parent ul {
+.parent ul li {
     list-style-type: none;
+
 }
+
+.parent ul span {
+    font-family: var(--paragrah-font);
+    font-size: 1.2rem;
+}
+
+.parent ul ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+    text-align: center;
+}
+
 
 .parent ul,
 .parent p {

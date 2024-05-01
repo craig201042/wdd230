@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Actor&family=Anton&family=Gabarito:wght@600&display=swap');
-
 :root {
-    --heading-font: 'Anton', serif;
-    --paragrah-font: 'Gabarito', serif;
+    --heading-font: 'Anton', sans-serif;
+    --paragrah-font: 'Gabarito', sans-serif;
 }
 
 main {

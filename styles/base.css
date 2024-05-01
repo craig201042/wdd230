@@ -78,20 +78,14 @@ header span {
     margin: 1rem;
 }
 
-.parent a {
-    font-size: 1rem;
-    font-family: var(--paragrah-font);
-}
+
 
 .parent ul li {
     list-style-type: none;
-
+    font-size: 1.1rem;
+    font-family: var(--paragrah-font)
 }
 
-.parent ul span {
-    font-family: var(--paragrah-font);
-    font-size: 1.2rem;
-}
 
 .parent div ul {
     display: flex;

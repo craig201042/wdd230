@@ -93,7 +93,7 @@ header span {
     font-size: 1.2rem;
 }
 
-.parent ul ul {
+.parent div ul {
     display: flex;
     flex-wrap: wrap;
     gap: 20px 20px;

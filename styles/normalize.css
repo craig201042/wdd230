@@ -84,6 +84,19 @@ a {
     background-color: transparent;
 }
 
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+
+abbr[title] {
+    border-bottom: none;
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    text-decoration: underline dotted;
+    /* 2 */
+}
 
 /**
    * Add the correct font weight in Chrome, Edge, and Safari.
@@ -286,7 +299,14 @@ textarea {
     /* 2 */
 }
 
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
 
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
 
 /**
    * 1. Correct the odd appearance in Chrome and Safari.
@@ -300,7 +320,13 @@ textarea {
     /* 2 */
 }
 
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
 
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
 
 /**
    * 1. Correct the inability to style clickable types in iOS and Safari.

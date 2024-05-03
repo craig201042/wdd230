@@ -15,28 +15,58 @@ h2 {
     font-size: 1.5rem;
 }
 
-nav {
+.navigation {
     background-color: goldenrod;
     margin: 0 auto;
     max-width: 800px;
 }
 
-nav ul {
-    list-style-type: none;
-}
 
-nav a {
-    display: block;
-    color: navy;
-    padding: 20px;
-    font-size: 22px;
-    font-family: 'Anton', serif;
+.navigation a {
+    display: none;
+    padding: 1rem;
     text-align: center;
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
     text-decoration: none;
+    color: #fff;
 }
 
-nav a:hover {
-    border: 1px solid black;
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+#mode {
+    position: absolute;
+    top: 2rem;
+    right: 0.85rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    right: 10px;
+    top: 1px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+.open a {
+    display: block;
 }
 
 header {

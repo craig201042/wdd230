@@ -9,11 +9,16 @@
         box-shadow: 1px 1px 10px black;
     }
 
-    nav ul {
+    .navigation {
         display: flex;
     }
 
-    nav ul li {
+    .navigation a {
+        display: block;
         flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
     }
 }

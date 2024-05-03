@@ -1,0 +1,25 @@
+@media screen and (min-width: 600px) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation a {
+        text-align: center;
+        flex: 1 1 100%;
+    }
+
+    .adventure {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    .description {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #menu {
+        display: none;
+    }
+}

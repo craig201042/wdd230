@@ -1,0 +1,144 @@
+:root {
+    --primary-color: #478C4F;
+    --secondary-color: #478C4F;
+    --accent1-color: #FBFBFF;
+    --accent2-color: #F8F1E3;
+
+    --heading-font: 'Anton', serif;
+    --paragrah-font: 'Gabarito', serif;
+
+    --nav-background-color: #E7DFC6;
+    --nav-link-color: #176087;
+    --nav-hover-link-color: #1D84B5;
+    --nav-hover-background-color: #FFFFFF;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid #111;
+    max-width: 1000px;
+}
+
+body {
+    font-family: var(--paragrah-font);
+    padding: 20px;
+}
+
+p {
+    padding: 25px;
+    color: #000;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 700px;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    left: 470px;
+    font-size: 1.5rem;
+    color: #478C4F;
+}
+
+article {
+    width: 100%;
+    background-color: #F8F1E3;
+    opacity: 0.8;
+}
+
+
+.navigation a {
+    display: none;
+    color: #478C4F;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: brown;
+    font-weight: 700;
+}
+
+
+footer {
+    display: block;
+    margin: 1px auto;
+    width: 650px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Gabarito', serif;
+    color: black;
+    border-top: 1px solid #111;
+
+}
+
+.adventure {
+    background-color: var(--accent1-color);
+}
+
+.adventure img {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+
+.description {
+    background-color: var(--accent1-color);
+}
+
+button {
+    margin: 1rem;
+    padding: 1rem;
+    color: #000;
+    background-color: azure;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    right: 10px;
+    top: 1px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+.open a {
+    display: block;
+}
+
+button:hover {
+    background-color: blue;
+}

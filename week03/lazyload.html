@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Demonstration</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development(Craig Zeng's course assignment portal)">
+    <meta name="author" content="Craig Zeng">
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lazy Load Demonstration</h1>
+    </header>
+    <main>
+        <img src="https://churchofjesuschrist.org/imgs/66a1c512e011fa8e96cc4e112ea46b1c8146075d/full/1600%2C/0/default"
+            alt="people01" loading="lazy" width="400" height="700">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem fuga doloribus mollitia quos tempora
+            dignissimos, ex consectetur, eos nisi beatae sapiente voluptate vitae veniam nemo nostrum labore dicta
+            eligendi laboriosam.</p>
+        <img src="https://churchofjesuschrist.org/imgs/34673009cec9729537e100865769aa598f4cbbe3/full/1600%2C/0/default"
+            alt="Christ02" loading="lazy" width="400" height="650">
+        <img src="https://churchofjesuschrist.org/imgs/52e208d5d25f4c53099df0ffc02641cf1cfd6bd5/full/1600%2C/0/default"
+            alt="people" loading="lazy" width="400" height="700">
+        <img src="https://churchofjesuschrist.org/imgs/d3014e39cc5ef41420cafbfbef31a315d76ebea3/full/1600%2C/0/default"
+            alt="Chart" loading="lazy" width="400" height="750">
+        <img src="https://churchofjesuschrist.org/imgs/0f0862e2e560843ea18c76887d0f945d7bf7a2d6/full/1600%2C/0/default"
+            alt="leader" loading="lazy" width="400" height="600">
+        <img src="https://churchofjesuschrist.org/imgs/b1044bef3819af3125f03b66c66dabb68196d07c/full/1600%2C/0/default"
+            alt="myself" loading="lazy" width="400" height="800">
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> ★ Craig Zeng ★ Taiwan</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+</body>
+
+</html>

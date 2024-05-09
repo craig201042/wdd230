@@ -2,6 +2,7 @@ document.querySelector("#year").innerHTML = new Date().getFullYear();
 document.querySelector("#lastModified").innerHTML = new Date();
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
+const visitsDisplay = document.querySelector(".visits");
 
 hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
@@ -22,3 +23,12 @@ modeButton.addEventListener("click", () => {
         modeButton.textContent = "🕶️";
     }
 });
+
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+if (numVisits !== 0) {
+    visitsDisplay.textContent = numVisits;
+} else {
+    visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+}
+numVisits++;
+localStorage.setItem("numVisits-ls", numVisits);

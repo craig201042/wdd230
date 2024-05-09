@@ -38,6 +38,16 @@
         <a href="">Form</a>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="chicago temple" width="1280" height="800">
+            </picture>
+            <div class="herolabel">
+                <p>Chicago Temple</p>
+            </div>
+        </div>
         <h1>WDD 230: Web Frontend Development</h1>
         <div class="parent">
             <section>
@@ -59,7 +69,8 @@
                         <li>Week 03:</li>
                         <li><a href="week03/images/landscape.webp">Image Format</a></li>
                         <li><a href="https://craig201042.github.io/wdd230/week03/lazyload.html">Lazy Loading</a></li>
-                        <li><a href="">Responsive Images</a></li>
+                        <li><a href="https://craig201042.github.io/wdd230/week03/responsive-images.html">Responsive
+                                Images</a></li>
                         <li><a href="https://craig201042.github.io/wdd230/week03/BOM.html">Web Storage API</a></li>
                     </ul>
                     <ul>
@@ -87,7 +98,12 @@
                 <p></p>
             </section>
         </div>
+        <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
     </main>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14514.983425235929!2d120.80013337026978!3d24.563443052656993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469ad1fb82e5173%3A0xc4566dbceac97dce!2zU1RBUkJVQ0tTIOaYn-W3tOWFiyAo6IuX5qCX5ZyL6I-v6ZaA5biCKQ!5e0!3m2!1szh-TW!2stw!4v1715206233944!5m2!1szh-TW!2stw"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <p>&copy;<span id="year"></span> ★ Craig Zeng ★ Taiwan</p>
         <p id="lastModified"></p>

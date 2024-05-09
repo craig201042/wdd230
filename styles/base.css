@@ -6,8 +6,38 @@
 main {
     margin: 0 auto;
     max-width: 1000px;
-
 }
+
+.hero {
+    margin: 10px auto;
+    position: relative;
+    height: 300px;
+}
+
+.hero img {
+    width: 100%;
+    height: 300px;
+}
+
+.herolabel {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: radial-gradient(#fff, #4D5B97);
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+}
+
+.herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: var(--heading-font);
+}
+
 
 h1,
 h2 {
@@ -111,7 +141,7 @@ header span {
 .parent ul li {
     list-style-type: none;
     font-size: 1.1rem;
-    font-family: var(--paragrah-font)
+    font-family: var(--paragrah-font);
 }
 
 
@@ -128,13 +158,25 @@ header span {
     padding: 10px;
 }
 
+
+.label {
+    font-family: var(--paragrah-font);
+    font-weight: 700;
+}
+
+#visits {
+    color: navy;
+    font-weight: bolder;
+    font-size: larger;
+}
+
 footer {
     display: block;
     margin: 1px auto;
     width: 650px;
     text-align: center;
     font-size: 1rem;
-    font-family: 'Gabarito', serif;
+    font-family: var(--paragrah-font);
     color: black;
     border-top: 1px solid #111;
 }

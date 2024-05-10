@@ -140,3 +140,8 @@ button:hover {
     grid-template-columns: 1fr;
     width: 25%;
 }
+
+.sidebar span {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}

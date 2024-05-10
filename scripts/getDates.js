@@ -24,7 +24,7 @@ modeButton.addEventListener("click", () => {
     }
 });
 
-let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+let numVisits = Number(localStorage.getItem("numVisits-ls")) || 0;
 if (numVisits !== 0) {
     visitsDisplay.textContent = numVisits;
 } else {

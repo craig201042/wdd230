@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="The Chamber of Commerce Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://craig201042.github.io/wdd230/chamber/index.html">
+    <meta property="og:image" content="https://craig201042.github.io/wdd230/images/logo.jpeg">
+    <title>The Chamber of Commerce Home Page</title>
+    <meta name="description"
+        content="welcomes the visitor with key information and invitations to engage with the organization">
+    <meta name="author" content="Craig Zeng">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Gabarito:wght@400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.jpeg" alt="chamber Logo">
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">Discover</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+        </nav>
+    </header>
+    <main class="discover">
+        <div class="sidebar">
+            <div>
+                <h3>Youth Entrepreneurship Resource</h3>
+                <a href="https://miaoli-youths.org/recourses"><img src="images/youth.png" alt="youth" width="300"
+                        height="200"></a>
+            </div>
+            <div>
+                <h3>Commerce Location</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d453.5938008393298!2d120.81655012910856!3d24.56328585708786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469ac08f32d52bb%3A0xd3d98f6480045619!2z6IuX5qCX57ij5ZWG5qWt5pyD!5e0!3m2!1szh-TW!2stw!4v1715223076776!5m2!1szh-TW!2stw"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                <h3>Industry Econology</h3>
+                <a href="https://investtaiwan.nat.gov.tw/showInvestInfoPage?lang=cht&IIFCity=5"><img
+                        src="https://spatialplan.miaoli.gov.tw/images/fdeve.jpg" alt="industry" width="300"
+                        height="200"></a>
+            </div>
+            <span id="timebetween"></span>
+        </div>
+        <div class="gallery">
+            <figure>
+                <img class="hover" src="images/paraguay_woman_bread_making.webp" loading="lazy" alt="baking" width="320"
+                    height="206">
+                <figcaption>Bread Making</figcaption>
+            </figure>
+            <figure>
+                <img src="images/paraguay_woman_bread.webp" loading="lazy" alt="bread" width="320" height="206">
+                <figcaption>Bread</figcaption>
+            </figure>
+            <figure>
+                <img class="hover" src="images/paraguay_woman_baking_bread.webp" loading="lazy" alt="making" width="320"
+                    height="206">
+                <figcaption>Baking Bread</figcaption>
+            </figure>
+            <figure>
+                <img src="images/paraguay_woman_bread_sharing.webp" loading="lazy" alt="sharing" width="320"
+                    height="206">
+                <figcaption>Bread Sharing</figcaption>
+            </figure>
+            <figure>
+                <img class="hover" src="images/paraguay_woman_bread_walking.webp" loading="lazy" alt="walking"
+                    width="320" height="206">
+                <figcaption>Walking</figcaption>
+            </figure>
+            <figure>
+                <img src="images/paraguay_woman_chickens.webp" loading="lazy" alt="chickens" width="320" height="206">
+                <figcaption>Chicken Feeding</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>No.1132 Zong Zeng Rd.Miao Li city Taiwan</p>
+        <p>&copy;<span id="year"></span> ★ Craig Zeng ★ WDD 230-The Chamber of Commerce Home Page</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+</body>
+
+</html>

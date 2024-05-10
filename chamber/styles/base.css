@@ -21,24 +21,13 @@ h3 {
 }
 
 header {
-    padding: 20px;
     background-color: var(--accent1-color);
-    margin: 1rem auto;
+    margin: 1px auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
     border-bottom: 1px solid #111;
     max-width: 1000px;
-}
-
-body {
-    font-family: var(--paragrah-font);
-    padding: 20px;
-}
-
-p {
-    padding: 25px;
-    color: #000;
 }
 
 .hero {
@@ -61,6 +50,7 @@ h1 {
 article {
     width: 100%;
     background-color: #F8F1E3;
+    font-family: var(--paragrah-font);
     opacity: 0.8;
 }
 
@@ -68,30 +58,17 @@ article {
 .navigation a {
     display: none;
     color: #478C4F;
-    padding: 20px;
     text-decoration: none;
     text-align: center;
     font-family: var(--heading-font);
     font-size: 1.5rem;
+    padding: 1rem;
 }
 
 .navigation a:hover {
     background-color: #bbb;
     color: brown;
     font-weight: 700;
-}
-
-
-footer {
-    display: block;
-    margin: 1px auto;
-    width: 650px;
-    text-align: center;
-    font-size: 1rem;
-    font-family: 'Gabarito', serif;
-    color: black;
-    border-top: 1px solid #111;
-
 }
 
 .adventure {
@@ -104,9 +81,19 @@ footer {
     text-align: center;
 }
 
-.description {
-    background-color: var(--accent1-color);
+
+footer {
+    display: block;
+    margin: 1px auto;
+    width: 650px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: var(--paragrah-font);
+    color: black;
+    border-top: 1px solid #111;
 }
+
+
 
 button {
     margin: 1rem;
@@ -141,4 +128,15 @@ button {
 
 button:hover {
     background-color: blue;
+}
+
+.discover {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 25%;
 }

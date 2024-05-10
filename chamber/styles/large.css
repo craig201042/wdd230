@@ -4,6 +4,7 @@
     }
 
     .navigation a {
+        display: block;
         text-align: center;
         flex: 1 1 100%;
     }
@@ -14,9 +15,19 @@
         align-items: center;
     }
 
-    .description {
+    .discover {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        line-height: 24px;
+    }
+
+    .hover:hover {
+        box-shadow: 0 0 50px #333;
     }
 
     #menu {

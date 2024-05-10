@@ -40,13 +40,12 @@ header {
     height: auto;
 }
 
-h1 {
+.heo h1 {
     position: absolute;
     left: 470px;
     font-size: 1.5rem;
     color: #478C4F;
 }
-
 
 
 article {
@@ -145,5 +144,5 @@ button:hover {
 
 .sidebar span {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: black;
 }

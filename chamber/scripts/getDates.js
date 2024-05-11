@@ -1,7 +1,6 @@
 document.querySelector("#year").innerHTML = new Date().getFullYear();
-document.querySelector("#lastModified").innerHTML = theDateToday;
+document.querySelector("#lastModified").innerHTML = new Date();
 const msToDays = 84600000;
-const theDateToday = new Date();
 const betweenelement = document.querySelector("#timebetween")
 
 

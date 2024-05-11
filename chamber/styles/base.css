@@ -17,11 +17,15 @@ h1,
 h2,
 h3 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
 }
 
 h1 {
     text-align: center;
+    color: var(--primary-color);
+}
+
+h3 {
+    color: #111;
 }
 
 header {
@@ -148,5 +152,6 @@ button:hover {
 
 .sidebar span {
     font-family: var(--heading-font);
-    color: black;
+    color: navy;
+    font-size: 2rem;
 }

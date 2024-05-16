@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Craig Zeng-WDD 230-Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://craig201042.github.io/wdd230/index.html">
+    <meta property="og:image" content="https://craig201042.github.io/wdd230/images/logo.jpeg">
+    <title>Craig Zeng Zeng-WDD 230-Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development(Craig Zeng's course assignment portal)">
+    <meta name="author" content="Craig Zeng">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Gabarito:wght@400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="mode"> 🕶️</div>
+        <img src="images/craig.jpg" alt="Craig" width="100" height="100">
+        <span>Craig Zeng</span>
+    </header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="">Home</a>
+        <a href="">Chamber</a>
+        <a href="">Site Plan</a>
+        <a href="">Form</a>
+    </nav>
+    <main>
+        <form method="get" action="record.html" class="wf1">
+            <div id="message"></div>
+            <label>User Name*<input type="text" name="fname" id="name" required></label>
+            <label>Password*<input type="password" pattern="[0-9]{8}"
+                    name="must be at least eight (8) characters long and can only be alpha-numeric" id="pw" required
+                    placeholder="12345678"></label>
+            <label>Password Confirmation*<input type="password" pattern="[0-9]{8}" name="confirmation" id="pwc" required
+                    placeholder="12345678"></label>
+            <label>Email*<input type="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" id="email" name="email"
+                    title="Please enter a valid email address" placeholder="someone@byui.edu" required></label>
+            <label>Page Rating<div id="rangevalue">0</div><input type="range" name="rating" id="pr" min="1" max="10"
+                    value="1" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="5">6</option>
+                    <option value="5">7</option>
+                    <option value="5">8</option>
+                    <option value="5">9</option>
+                    <option value="5">10</option>
+                </datalist>
+            </label>
+            <input type="submit" value="Propose My Information">
+        </form>
+    </main>
+    <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+    <footer>
+        <p>&copy;<span id="year"></span> ★ Craig Zeng ★ Taiwan</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+</body>
+
+</html>

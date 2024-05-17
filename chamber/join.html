@@ -37,7 +37,7 @@
         </nav>
     </header>
     <main>
-        <form class="hf" method="get" action="thankyou.html">
+        <form class="hf" id="formwork" method="get" action="thankyou.html">
             <label>First Name*<input type="text" name="fname" id="fname" required></label>
             <label>Last Name*<input type="text" name="lname" id="lname" required></label>
             <label>Position<input type="text" pattern="[A-Za-z/s-]{7}" name="position" id="p"></label>
@@ -55,52 +55,54 @@
             </label>
             <label>Business Description<textarea name="description" id="bd"></textarea></label>
             <label><input type="hidden" name="time" id="time"></label>
-            <button id="button"><input type="submit" value="Send My Application"></button>
+            <input id="button" type="submit" value="Send My Application">
         </form>
-        <table>
-            <thead>
-                <tr>
-                    <th th colspan="5">Membership Categories & Benefits</th>
-                </tr>
-                <tr>
-                    <th scope="col"></th>
-                    <th scope="col">NP Membership</th>
-                    <th scope="col">Bronze Membership</th>
-                    <th scope="col">Silver Membership</th>
-                    <th scope="col">Gold Membership</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Joining Fees</td>
-                    <td>NT$0</td>
-                    <td>NT$16,900</td>
-                    <td>NT$22,540</td>
-                    <td>NT$33,000</td>
-                </tr>
-                <tr>
-                    <td>Traning</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                </tr>
-                <tr>
-                    <td>Special Event</td>
-                    <td>❌</td>
-                    <td>❌</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                </tr>
-                <tr>
-                    <td>Spotlight Advertising</td>
-                    <td>❌</td>
-                    <td>❌</td>
-                    <td>❌</td>
-                    <td>✔️</td>
-                </tr>
-            </tbody>
-        </table>
+        <div style="overflow-x:auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th th colspan="5">Membership Categories & Benefits</th>
+                    </tr>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">NP Membership</th>
+                        <th scope="col">Bronze Membership</th>
+                        <th scope="col">Silver Membership</th>
+                        <th scope="col">Gold Membership</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Joining Fees</td>
+                        <td>NT$0</td>
+                        <td>NT$16,900</td>
+                        <td>NT$22,540</td>
+                        <td>NT$33,000</td>
+                    </tr>
+                    <tr>
+                        <td>Traning</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Special Event</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Spotlight Advertising</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
     <footer>
         <p>No.1132 Zong Zeng Rd.Miao Li city Taiwan</p>

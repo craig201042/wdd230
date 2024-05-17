@@ -30,8 +30,8 @@ else {
 localStorage.setItem("visitTime-ls", today);
 
 const timestamp = document.querySelector("#time");
-const button = document.querySelector("#button");
+const formelement = document.querySelector("#formwork");
 
-button.addEventListener("click", () => {
+formelement.onload = () => {
     timestamp.innerHTML = Date.now();
-})
+};

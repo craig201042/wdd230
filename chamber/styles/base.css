@@ -147,14 +147,14 @@ button:hover {
 
 .discover {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
-.sidebar {
+/*.sidebar {
     display: grid;
     grid-template-columns: 1fr;
     width: 25%;
-}
+}*/
 
 .sidebar span {
     font-family: var(--heading-font);
@@ -230,6 +230,7 @@ table {
     border: thin solid var(--accent1-color);
     box-shadow: 0 0 10px;
     border-collapse: collapse;
+    width: 100%;
 }
 
 tr:first-child th {

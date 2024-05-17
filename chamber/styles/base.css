@@ -38,6 +38,12 @@ header {
     max-width: 1000px;
 }
 
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+
 .hero {
     position: relative;
 }
@@ -154,4 +160,99 @@ button:hover {
     font-family: var(--heading-font);
     color: navy;
     font-size: 2rem;
+}
+
+.hf fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0.5rem 2%;
+}
+
+.hf legend {
+    color: navy;
+    padding: 0.5rem;
+}
+
+.hf label {
+    display: block;
+    padding-top: 1rem;
+    color: navy;
+    font-size: 0.9rem;
+    font-family: var(--paragrah-font);
+}
+
+.hf div {
+    padding-top: 1rem;
+    color: navy;
+    font-size: 0.9rem;
+}
+
+.hf input[type="text"],
+.hf input[type="tel"],
+.hf input[type="email"],
+.hf input[type="hidden"],
+.hf select,
+.hf input[type="number"] {
+    background-color: #eee;
+    display: block;
+    border: solid 1px var(--accent1-color);
+    border-radius: 6px;
+    padding: 0.75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.hf textarea {
+    display: block;
+    border: solid 3px black;
+    border-radius: 6px;
+    padding: 10px 10px 10px 10px;
+    width: 50%;
+    height: 50%
+}
+
+.hf input[type="submit"] {
+    border: none;
+    background-color: black;
+    color: #eee;
+    border-radius: 6px;
+    padding: 0.8rem;
+    width: 90%;
+    margin: 1rem 2% 1rem 2%;
+    font-family: var(--paragrah-font);
+}
+
+table {
+    margin: 10px auto;
+    border: thin solid var(--accent1-color);
+    box-shadow: 0 0 10px;
+    border-collapse: collapse;
+}
+
+tr:first-child th {
+    background-color: navy;
+    color: #eee;
+}
+
+th,
+td {
+    padding: 7px 15px;
+    border: 1px solid;
+}
+
+th {
+    background-color: navy;
+    font-size: larger;
+    color: #eee;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--accent2-color);
 }

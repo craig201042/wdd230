@@ -28,3 +28,10 @@ else {
 };
 
 localStorage.setItem("visitTime-ls", today);
+
+const timestamp = document.querySelector("#time");
+const button = document.querySelector("#button");
+
+button.addEventListener("click", () => {
+    timestamp.innerHTML = Date.now();
+})

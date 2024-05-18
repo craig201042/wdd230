@@ -43,14 +43,14 @@ main {
     min-height: 20rem;
 }
 
-
 .hero {
+    margin: 10px auto;
     position: relative;
+    height: auto;
 }
 
 .hero img {
-    display: block;
-    width: 700px;
+    width: 100%;
     height: auto;
 }
 

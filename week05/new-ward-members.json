@@ -1,0 +1,18 @@
+{
+    "Family Name": "Wang Family",
+    "The date the family moved into the ward": "2024/3/10",
+    "Number of people in the family": 2,
+    "Visited by bishopric?": "true",
+    "Individual family members": [
+        {
+            "Name": "Mr.Wang",
+            "Gender": "Male",
+            "Birthdate": 19820710
+        },
+        {
+            "Name": "Mrs.Wang",
+            "Gender": "Female",
+            "Birthdate": 19851213
+        }
+    ]
+}

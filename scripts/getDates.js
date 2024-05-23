@@ -3,9 +3,10 @@ document.querySelector("#lastModified").innerHTML = new Date();
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 const visitsDisplay = document.querySelector(".visits");
-const p1 = document.querySelector("#pw");
-const p2 = document.querySelector("#pwc");
-const msg = document.querySelector("#message");
+const currentTemp = document.querySelector("#current-temp");
+const weatherIcon = document.querySelector("#weather-icon");
+const captionDesc = document.querySelector("figcaption");
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=24.56&lon=120.81&units=imperial&appid=d373b3b88e697ebd320716b0e82c312a";
 
 hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
@@ -36,24 +37,28 @@ if (numVisits !== 0) {
 numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
 
-p2.addEventListener("focusout", control);
+async function apiFetch() {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            displayResults(data);
+        }
+        else {
+            throw Error(await response.text());
+        }
 
-function control() {
-    if (p1.value != p2.value) {
-        msg.textContent = "❗Password do not match!";
-        p2.value = "";
-        p2.focus();
-    } else {
-        msg.textContent = "Password match!🥳";
+    } catch (error) {
+        console.log(error);
     }
 }
 
-const rangevalue = document.querySelector("#rangevalue");
-const range = document.querySelector("#pr");
-
-range.addEventListener("change", displayRatingValue);
-range.addEventListener("input", displayRatingValue);
-
-function displayRatingValue() {
-    rangevalue.innerHTML = range.value;
+const displayResults = (data) => {
+    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+    let iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    let desc = data.weather[0].description;
+    weatherIcon.setAttribute("src", iconsrc);
+    weatherIcon.setAttribute("alt", "weather");
+    captionDesc.textContent = desc;
 }
+apiFetch();

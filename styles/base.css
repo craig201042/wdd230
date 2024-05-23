@@ -180,3 +180,7 @@ footer {
     color: black;
     border-top: 1px solid #111;
 }
+
+#card p {
+    font-family: var(--paragrah-font);
+}

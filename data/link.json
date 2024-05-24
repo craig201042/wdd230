@@ -1,11 +1,67 @@
 {
     "weeks": [
         {
-            "week": "week01",
+            "week": "week 1",
             "links": [
                 {
-                    "url": "",
-                    "title": ""
+                    "url": "week01/holygrail.html",
+                    "title": "HG Layout"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "mQueries"
+                }
+            ]
+        },
+        {
+            "week": "week 2",
+            "links": [
+                {
+                    "url": "week02/design.html",
+                    "title": "D principles"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "DManu"
+                }
+            ]
+        },
+        {
+            "week": "week 3",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "ImaFormat"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "lazy"
+                }
+            ]
+        },
+        {
+            "week": "week 4",
+            "links": [
+                {
+                    "url": "week04/images/combinator-excercises.JPG",
+                    "title": "Combinators"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "tables"
+                }
+            ]
+        },
+        {
+            "week": "week 5",
+            "links": [
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "Fetch API"
                 }
             ]
         }

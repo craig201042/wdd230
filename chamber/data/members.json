@@ -1,0 +1,60 @@
+{
+    "companies": [
+        {
+            "name": "Taiwan Fertilizer company",
+            "address": "17F., No. 170, Jingmao 1st Rd., Nangang Dist.,Taipei City",
+            "phoneNumbers": "+886-2-2542-2231",
+            "website": "https://www.taifer.com.tw/English/",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/zh/9/92/Taiwan_Fertilizer_Co._logo.svg",
+            "membershipLevel": "Sliver"
+        },
+        {
+            "name": "Flying Cow Ranch",
+            "address": "No.166, Nanhe Village, Tongxiao Township, Miaoli County 357, Taiwan",
+            "phoneNumbers": "+886-37-782999",
+            "website": "https://www.flyingcow.com.tw/en/about/",
+            "imageUrl": "https://trade.1111.com.tw/Include/getPhoto.ashx?vType=1&vNo=36094",
+            "membershipLevel": "Broze"
+        },
+        {
+            "name": "EVERLIGHT Electronics",
+            "address": "No. 6-8, Zhonghua Rd., Shulin Dist., New Taipei City, Taiwan",
+            "phoneNumbers": "+886-2-2685-6688",
+            "website": "https://en.everlight.com/",
+            "imageUrl": "https://p.ledinside.com.tw/led/2020-07/1594611355_72153.jpg",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Eclat",
+            "address": "No. 738, Zhongyang Rd., Xinzhuang Dist.,New Taipei City",
+            "phoneNumbers": "+886 222 996 000",
+            "website": "https://www.eclat.com.tw/",
+            "imageUrl": "https://blog.104.com.tw/wp-content/uploads/2023/04/28161850/%E9%B4%BB%E5%84%92%EF%BC%8Dlogo.jpg",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Sinbon",
+            "address": "No. 586, Guo Hwan Rd.,Miao Li City",
+            "phoneNumbers": "+886-37-330099",
+            "website": "https://www.sinbon.com/",
+            "imageUrl": "https://www.sinbon.com//img/logo.svg",
+            "membershipLevel": "Sliver"
+        },
+        {
+            "name": "Chunghwa Protein Co., Ltd.",
+            "address": "No.8-1, Longgang, Miaoli City, Miaoli County 360, Taiwan ",
+            "phoneNumbers": "+886-37-351158 ",
+            "website": "https://chunghwaprotein.wixsite.com/chpt-en",
+            "imageUrl": "https://static.wixstatic.com/media/a1e5cd_2442e9787d1c4345a2f4ead7dce56c48.png/v1/fit/w_2500,h_1330,al_c/a1e5cd_2442e9787d1c4345a2f4ead7dce56c48.png",
+            "membershipLevel": "Sliver"
+        },
+        {
+            "name": "Po Ly Gim",
+            "address": "No. 149-1, Zhusen Village, Tongluo Shiang, Miao-li County 366, Taiwan",
+            "phoneNumbers": "+886-37-981220",
+            "website": "https://www.polygim.com.tw/about.html",
+            "imageUrl": "https://www.polygim.com.tw/www/apps/smarty/tpl/default/images/logo.png",
+            "membershipLevel": "Gold"
+        }
+    ]
+}

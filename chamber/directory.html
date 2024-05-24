@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="The Chamber of Commerce Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://craig201042.github.io/wdd230/chamber/index.html">
+    <meta property="og:image" content="https://craig201042.github.io/wdd230/images/logo.jpeg">
+    <title>The Chamber of Commerce Home Page</title>
+    <meta name="description"
+        content="welcomes the visitor with key information and invitations to engage with the organization">
+    <meta name="author" content="Craig Zeng">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Gabarito:wght@400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.jpeg" alt="chamber Logo">
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">Discover</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+        </nav>
+    </header>
+    <main>
+        <div id="cards"></div>
+    </main>
+    <footer>
+        <p>No.1132 Zong Zeng Rd.Miao Li city Taiwan</p>
+        <p>&copy;<span id="year"></span> ★ Craig Zeng ★ WDD 230-The Chamber of Commerce Home Page</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/directory.js"></script>
+</body>
+
+</html>

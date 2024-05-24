@@ -1,31 +1,62 @@
-const url = "https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json";
-const cards = document.querySelector("#cards");
+document.querySelector("#year").innerHTML = new Date().getFullYear();
+document.querySelector("#lastModified").innerHTML = new Date();
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
 
-async function getProphetData() {
+hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
+});
+const url = "https://craig201042.github.io/wdd230/chamber/data/members.json";
+const cards = document.querySelector(".cards");
+
+async function getMembersData() {
     const response = await fetch(url);
     const data = await response.json();
-    displayProphets(data.prophets);
+    displayMembers(data.companies);
 }
-const displayProphets = (prophets) => {
-    prophets.forEach((prophet) => {
+const displayMembers = (companies) => {
+    companies.forEach((company) => {
         const card = document.createElement("section");
         const fullName = document.createElement("h2");
-        const portrait = document.createElement("img");
-        const birthdate = document.createElement("div");
-        const birthplace = document.createElement("div");
-        fullName.textContent = `${prophet.name} ${prophet.lastname}`;
-        birthdate.textContent = `Date of birth:${prophet.birthdate}`;
-        birthplace.textContent = `Place of birth:${prophet.birthplace}`;
-        portrait.setAttribute("src", prophet.imageurl);
-        portrait.setAttribute("alt", `Portrait of ${prophet.name} ${prophet.lastname}`);
-        portrait.setAttribute("loading", "lazy");
-        portrait.setAttribute("width", "340");
-        portrait.setAttribute("height", "440");
+        const companyLogo = document.createElement("img");
+        const address = document.createElement("div");
+        const phoneNumber = document.createElement("div");
+        const webPage = document.createElement("div");
+        const website = document.createElement("a");
+        const memberShip = document.createElement("div");
+        fullName.textContent = company.name;
+        address.textContent = company.address;
+        phoneNumber.textContent = company.phoneNumbers;
+        website.href = company.website;
+        webPage.textContent = "Company WebPage";
+        memberShip.textContent = company.membershipLevel;
+        companyLogo.setAttribute("src", company.website);
+        companyLogo.setAttribute("alt", company.name);
+        companyLogo.setAttribute("loading", "lazy");
+        companyLogo.setAttribute("width", "340");
+        companyLogo.setAttribute("height", "440");
+        webPage.appendChild(website);
         card.appendChild(fullName);
-        card.appendChild(birthdate);
-        card.appendChild(birthplace);
-        card.appendChild(portrait);
+        card.appendChild(webPage);
+        card.appendChild(address);
+        card.appendChild(companyLogo);
+        card.appendChild(phoneNumber);
+        card.appendChild(memberShip);
         cards.appendChild(card);
     });
 }
-getProphetData();
+getMembersData();
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+
+gridbutton.addEventListener("click", () => {
+    display.classList.add("cards");
+    display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", () => {
+    display.classList.add("list");
+    display.classList.remove("cards");
+});

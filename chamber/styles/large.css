@@ -33,4 +33,10 @@
     #menu {
         display: none;
     }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
 }

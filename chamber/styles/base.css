@@ -52,6 +52,7 @@ main {
 .hero img {
     width: 100%;
     height: auto;
+    position: relative;
 }
 
 .hero h1 {
@@ -142,7 +143,7 @@ button {
 }
 
 button:hover {
-    background-color: blue;
+    background-color: brown;
 }
 
 .discover {
@@ -256,4 +257,73 @@ td {
 
 tbody tr:nth-child(odd) {
     background-color: var(--accent2-color);
+}
+
+section {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: var(--accent1-color);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.cards section {
+    text-align: center;
+}
+
+.cards img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #333;
+}
+
+.cards h2 {
+    font-family: var(--heading-font);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+}
+
+
+.list section img {
+    display: none;
+}
+
+
+.list section:nth-child(even) {
+    background-color: #bed;
+}
+
+section a {
+    font-family: var(--paragrah-font);
+    font-size: 0.85rem;
+    color: navy;
+    letter-spacing: 1.1pt;
+}
+
+.menu {
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.menu button {
+    padding: 1rem;
+    font-weight: 700;
+    color: black;
 }

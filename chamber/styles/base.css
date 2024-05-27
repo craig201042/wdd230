@@ -232,6 +232,7 @@ table {
     box-shadow: 0 0 10px;
     border-collapse: collapse;
     width: 100%;
+    object-fit: contain;
 }
 
 tr:first-child th {

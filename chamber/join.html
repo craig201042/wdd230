@@ -42,7 +42,7 @@
             <label>Last Name*<input type="text" name="lname" id="lname" required></label>
             <label>Position<input type="text" pattern="[A-Za-z/s-]{7}" name="position" id="p"></label>
             <label>Email*<input type="email" id="email" name="email" placeholder="someone@byui.edu" required></label>
-            <label>Mobile Phone Number<input type="tel" name="phone"></label>
+            <label>Mobile Phone Number<input type="tel" id="phone" name="phone" required></label>
             <label>Business Name*<input type="text" name="bname" id="bname" required></label>
             <label>Membership Level
                 <select name="level">
@@ -57,7 +57,7 @@
             <label><input type="hidden" name="time" id="time"></label>
             <input id="button" type="submit" value="Send My Application">
         </form>
-        <div style="overflow-x:auto;">
+        <div>
             <table>
                 <thead>
                     <tr>

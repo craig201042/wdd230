@@ -29,10 +29,10 @@ const displayMembers = (companies) => {
         fullName.textContent = company.name;
         address.textContent = company.address;
         phoneNumber.textContent = company.phoneNumbers;
-        website.setAttribute = ("href", company.website);
+        website.href = company.website;
         website.innerText = "Company WebPage";
         memberShip.textContent = company.membershipLevel;
-        companyLogo.setAttribute("src", company.website);
+        companyLogo.setAttribute("src", company.imageUrl);
         companyLogo.setAttribute("alt", company.name);
         companyLogo.setAttribute("loading", "lazy");
         companyLogo.setAttribute("width", "340");

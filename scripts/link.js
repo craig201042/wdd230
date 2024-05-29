@@ -27,9 +27,9 @@ const displaylinks = (weeks) => {
         const a1 = document.createElement("a");
         const a2 = document.createElement("a");
         list1.textContent = wek.week;
-        a1.setAttribute = ("href", `${baseURL}${wek.links[0].url}`);
+        a1.href = (baseURL) + (wek.links[0].url);
         a1.innerText = wek.links[0].title;
-        a2.setAttribute = ("href", `${baseURL}${wek.links[1].url}`);
+        a2.href = (baseURL) + (wek.links[1].url);
         a2.innerText = wek.links[1].title;
         list2.appendChild(a1);
         list3.appendChild(a2);

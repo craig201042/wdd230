@@ -328,3 +328,19 @@ section a {
     font-weight: 700;
     color: black;
 }
+
+#card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    align-items: center;
+}
+
+#card div {
+    text-align: center;
+}
+
+#card p,
+#card figcaption {
+    font-family: var(--paragrah-font);
+}

@@ -9,6 +9,7 @@ hamButton.addEventListener('click', () => {
 });
 const url = "https://craig201042.github.io/wdd230/chamber/data/members.json";
 const cards = document.querySelector(".cards");
+const display = document.querySelector("article");
 
 async function getMembersData() {
     const response = await fetch(url);
@@ -28,8 +29,8 @@ const displayMembers = (companies) => {
         fullName.textContent = company.name;
         address.textContent = company.address;
         phoneNumber.textContent = company.phoneNumbers;
-        website.href = company.website;
-        webPage.textContent = "Company WebPage";
+        website.setAttribute = ("href", company.website);
+        website.innerText = "Company WebPage";
         memberShip.textContent = company.membershipLevel;
         companyLogo.setAttribute("src", company.website);
         companyLogo.setAttribute("alt", company.name);

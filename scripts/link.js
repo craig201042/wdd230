@@ -1,5 +1,6 @@
 const baseURL = "https://craig201042.github.io/wdd230/";
 const linksURL = "https://craig201042.github.io/wdd230/data/link.json";
+const divelement = document.querySelector("#weeks");
 
 async function getLinks() {
     try {
@@ -18,23 +19,24 @@ async function getLinks() {
 }
 
 const displaylinks = (weeks) => {
-    weeks.forEach((week) => {
+    weeks.forEach((wek) => {
         const ulist = document.createElement("ul");
         const list1 = document.createElement("li");
         const list2 = document.createElement("li");
         const list3 = document.createElement("li");
         const a1 = document.createElement("a");
         const a2 = document.createElement("a");
-        list1.textContent = week.week;
-        list2.textContent = week.links[0].title;
-        a1.href = `${baseURL}${week.links[0].url}`;
-        list3.textContent = week.links[1].title;
-        a2.href = `${baseURL}${week.links[1].url}`;
+        list1.textContent = wek.week;
+        a1.setAttribute = ("href", `${baseURL}${wek.links[0].url}`);
+        a1.innerText = wek.links[0].title;
+        a2.setAttribute = ("href", `${baseURL}${wek.links[1].url}`);
+        a2.innerText = wek.links[1].title;
         list2.appendChild(a1);
         list3.appendChild(a2);
         ulist.appendChild(list1);
         ulist.appendChild(list2);
         ulist.appendChild(list3);
+        divelement.appendChild(ulist);
     });
 }
 getLinks();

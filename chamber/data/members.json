@@ -6,7 +6,7 @@
             "phoneNumbers": "+886-2-2542-2231",
             "website": "https://www.taifer.com.tw/English/",
             "imageUrl": "https://upload.wikimedia.org/wikipedia/zh/9/92/Taiwan_Fertilizer_Co._logo.svg",
-            "membershipLevel": "Sliver"
+            "membershipLevel": "Broze"
         },
         {
             "name": "Flying Cow Ranch",
@@ -22,6 +22,8 @@
             "phoneNumbers": "+886-2-2685-6688",
             "website": "https://en.everlight.com/",
             "imageUrl": "https://p.ledinside.com.tw/led/2020-07/1594611355_72153.jpg",
+            "advertise1": "https://www.sinbon.com/files/large/a6df9052f973025e6a171c9cd55c47c7.jpg",
+            "advertise2": "https://www.sinbon.com/files/large/a5e690794eca6a28fb7ae28b1af08072.jpg",
             "membershipLevel": "Gold"
         },
         {
@@ -30,14 +32,16 @@
             "phoneNumbers": "+886 222 996 000",
             "website": "https://www.eclat.com.tw/",
             "imageUrl": "https://blog.104.com.tw/wp-content/uploads/2023/04/28161850/%E9%B4%BB%E5%84%92%EF%BC%8Dlogo.jpg",
-            "membershipLevel": "Gold"
+            "membershipLevel": "Broze"
         },
         {
             "name": "Sinbon",
             "address": "No. 586, Guo Hwan Rd.,Miao Li City",
             "phoneNumbers": "+886-37-330099",
             "website": "https://www.sinbon.com/",
-            "imageUrl": "https://www.sinbon.com//img/logo.svg",
+            "imageUrl": "https://www.single-pair-ethernet.com/sites/default/files/styles/4_3/public/2020-07/sinbon_web.jpg?itok=p0LqgcBX",
+            "advertise1": "https://www.sinbon.com/files/large/a6df9052f973025e6a171c9cd55c47c7.jpg",
+            "advertise2": "https://www.sinbon.com/files/large/a5e690794eca6a28fb7ae28b1af08072.jpg",
             "membershipLevel": "Sliver"
         },
         {
@@ -46,7 +50,7 @@
             "phoneNumbers": "+886-37-351158 ",
             "website": "https://chunghwaprotein.wixsite.com/chpt-en",
             "imageUrl": "https://static.wixstatic.com/media/a1e5cd_2442e9787d1c4345a2f4ead7dce56c48.png/v1/fit/w_2500,h_1330,al_c/a1e5cd_2442e9787d1c4345a2f4ead7dce56c48.png",
-            "membershipLevel": "Sliver"
+            "membershipLevel": "Broze"
         },
         {
             "name": "Po Ly Gim",
@@ -54,7 +58,7 @@
             "phoneNumbers": "+886-37-981220",
             "website": "https://www.polygim.com.tw/about.html",
             "imageUrl": "https://www.polygim.com.tw/www/apps/smarty/tpl/default/images/logo.png",
-            "membershipLevel": "Gold"
+            "membershipLevel": "Broze"
         }
     ]
 }

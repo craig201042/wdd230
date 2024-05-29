@@ -61,3 +61,4 @@ listbutton.addEventListener("click", () => {
     display.classList.add("list");
     display.classList.remove("cards");
 });
+

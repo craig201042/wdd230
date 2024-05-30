@@ -55,6 +55,7 @@ if (weekDay == 1 || weekDay == 2 || weekDay == 3) {
     const content = document.createElement("div");
     const text = document.createElement("p");
     const button = document.createElement("button");
+    button.setAttribute("id", "bannerClose");
     const icon = document.createElement("span");
     text.innerHTML = `<strong>Reminder:</strong> Welcome to attend the chamber of commerce meet and greet on Wednesday at 7:00
     p.m.!`
@@ -64,3 +65,7 @@ if (weekDay == 1 || weekDay == 2 || weekDay == 3) {
     content.appendChild(button);
     banner.appendChild(content);
 }
+
+document.querySelector("#bannerClose").addEventListener("click", function () {
+    this.closest(".banner").style.display = "none";
+});

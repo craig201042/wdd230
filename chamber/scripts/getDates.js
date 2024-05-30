@@ -67,5 +67,5 @@ if (weekDay == 1 || weekDay == 2 || weekDay == 3) {
 }
 
 document.querySelector("#bannerClose").addEventListener("click", function () {
-    this.closest(".banner").style.display = "none";
+    document.querySelector(".banner").style.display = "none";
 });

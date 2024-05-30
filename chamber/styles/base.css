@@ -47,12 +47,14 @@ main {
     position: relative;
     margin: 10px auto;
     height: auto;
+    object-fit: contain;
 }
 
 .hero img {
     width: 100%;
     height: auto;
     position: relative;
+
 }
 
 .hero h1 {
@@ -329,12 +331,7 @@ section a {
     color: black;
 }
 
-#card {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 5px;
-    align-items: center;
-}
+
 
 #card div {
     text-align: center;
@@ -343,4 +340,29 @@ section a {
 #card p,
 #card figcaption {
     font-family: var(--paragrah-font);
+}
+
+.banner {
+    background: var(--primary-color);
+}
+
+.banner div {
+    padding: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.banner p {
+    line-height: 1.4;
+    font-family: var(--paragrah-font);
+    font-size: 1.2rem;
+}
+
+
+
+.banner p,
+.banner span {
+    color: #ffffff;
 }

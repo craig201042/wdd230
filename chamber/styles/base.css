@@ -121,9 +121,11 @@ button {
     margin: 1rem;
     padding: 1rem;
     color: #000;
-    background-color: azure;
+    background-color: var(--primary-color);
     border-radius: 0.5rem;
+    border: none;
     font-size: 1.2rem;
+    font-family: var(--paragrah-font);
 }
 
 #menu {
@@ -366,7 +368,6 @@ section a {
 
 
 
-.banner p,
-.banner span {
+.banner p {
     color: black;
 }

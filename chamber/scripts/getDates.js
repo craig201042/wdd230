@@ -28,21 +28,21 @@ async function getRandomData() {
     let randomIndex = Math.floor(Math.random() * data.companies.length)
     if (data.companies[randomIndex].membershipLevel != "Broze") {
         adtitle.textContent = "Spotlight Today";
-        const image = document.createElement("img");
+        const image = document.querySelector("#adimage");
         image.setAttribute("src", imageURLs[randomIndex]);
         image.setAttribute("alt", "advertise");
         image.setAttribute("width", "1204");
         image.setAttribute("height", "800");
-        pic.appendChild(image);
+        //pic.appendChild(image);
     }
     else {
         adtitle.textContent = "Miaoli city Chamber Of Commerce";
-        const image = document.createElement("img");
+        const image = document.querySelector("#adimage");
         image.setAttribute("src", "https://craig201042.github.io/wdd230/chamber/images/hero-medium.webp");
         image.setAttribute("alt", "landscape");
         image.setAttribute("width", "1204");
         image.setAttribute("height", "800");
-        pic.appendChild(image);
+        //pic.appendChild(image);
     }
 }
 

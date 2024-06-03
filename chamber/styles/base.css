@@ -99,6 +99,10 @@ article {
     text-align: center;
 }
 
+.adventure p {
+    font-family: var(--paragrah-font);
+}
+
 
 footer {
     display: block;

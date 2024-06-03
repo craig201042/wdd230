@@ -48,7 +48,7 @@ async function getRandomData() {
 
 getRandomData();
 
-const weekDay = new Date().getDay;
+const weekDay = new Date().getDay();
 const banner = document.querySelector(".banner");
 
 if (weekDay == 1 || weekDay == 2 || weekDay == 3) {
@@ -64,8 +64,9 @@ if (weekDay == 1 || weekDay == 2 || weekDay == 3) {
     content.appendChild(text);
     content.appendChild(button);
     banner.appendChild(content);
+    document.querySelector("#bannerClose").addEventListener("click", function () {
+        document.querySelector(".banner").style.display = "none";
+    });
+
 }
 
-document.querySelector("#bannerClose").addEventListener("click", function () {
-    document.querySelector(".banner").style.display = "none";
-});

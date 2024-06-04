@@ -17,10 +17,10 @@ const pic = document.querySelector("#advertise");
 const adtitle = document.querySelector("#title");
 let i = 0;
 const imageURLs = [
-    "https://megapx-assets.dcard.tw/images/335af3cd-8913-4986-b3e6-71c70703b4d8/full.jpeg",
-    "https://images.pcone.com.tw/uploads/product_image/8090713/dddf3acfa051e358184b2a586a0d4a49/17cfb7dbd7e42168d6dde2e7f5a37a2b.jpg",
-    "https://www.sinbon.com/files/large/a6df9052f973025e6a171c9cd55c47c7.jpg",
-    "https://www.sinbon.com/files/large/808ccd3308f4dcc724c88c3cecbbeb39.jpg"
+    "https://craig201042.github.io/wdd230/chamber/images/everlight.png",
+    "https://craig201042.github.io/wdd230/chamber/images/everlight01.png",
+    "https://craig201042.github.io/wdd230/chamber/images/sinbon.jpg",
+    "https://craig201042.github.io/wdd230/chamber/images/sinbon2.webp"
 ];
 async function getRandomData() {
     const response = await fetch(membersUrl);

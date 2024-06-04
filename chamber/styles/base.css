@@ -53,8 +53,6 @@ main {
 .hero img {
     width: 100%;
     height: auto;
-    position: relative;
-
 }
 
 .hero h1 {

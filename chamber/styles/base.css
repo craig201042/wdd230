@@ -364,8 +364,6 @@ section a {
     font-size: 1.2rem;
 }
 
-
-
 .banner p {
     color: black;
 }
@@ -373,4 +371,16 @@ section a {
 .msidebar li {
     font-family: var(--paragrah-font);
     font-size: 1.2rem;
+}
+
+.msidebar div {
+    align-items: center;
+}
+
+.msidebar h1 {
+    text-align: left;
+}
+
+#card {
+    margin: 0 0 0.75rem 0;
 }

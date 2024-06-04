@@ -37,27 +37,69 @@
         </nav>
     </header>
     <main>
-        <form class="hf" id="formwork" method="get" action="thankyou.html">
-            <label>First Name*<input type="text" name="fname" id="fname" required></label>
-            <label>Last Name*<input type="text" name="lname" id="lname" required></label>
-            <label>Position<input type="text" pattern="[A-Za-z/s-]{7}" name="position" id="p"></label>
-            <label>Email*<input type="email" id="email" name="email" placeholder="someone@byui.edu" required></label>
-            <label>Mobile Phone Number<input type="tel" id="phone" name="phone" required></label>
-            <label>Business Name*<input type="text" name="bname" id="bname" required></label>
-            <label>Membership Level
-                <select name="level">
-                    <option value="">Please Select &#9662;</option>
-                    <option value="npm">NP Membership</option>
-                    <option value="bm">Bronze Membership</option>
-                    <option value="sm">Silver Membership</option>
-                    <option value="gm">Gold Membership</option>
-                </select>
-            </label>
-            <label>Business Description<textarea name="description" id="bd"></textarea></label>
-            <label><input type="hidden" name="time" id="time"></label>
-            <input id="button" type="submit" value="Send My Application">
-        </form>
-        <div>
+        <section class="member">
+            <div class="msidebar">
+                <h1>Membership Benefit</h1>
+                <div>
+                    <h2>NP Membership</h2>
+                    <p>
+                        ★Joining Fees:NT$0
+                        ★Training ✔️
+                        ★Special Event ❌
+                        ★Spotlight Advertising ❌
+                    </p>
+                </div>
+                <div>
+                    <h2>Bronze Membership</h2>
+                    <p>
+                        ★Joining Fees:NT$16,900
+                        ★Training ✔️
+                        ★Special Event ❌
+                        ★Spotlight Advertising ❌
+                    </p>
+                </div>
+                <div>
+                    <h2>Silver Membership</h2>
+                    <p>
+                        ★Joining Fees:NT$22,540
+                        ★Training ✔️
+                        ★Special Event ❌
+                        ★Spotlight Advertising ✔️
+                    </p>
+                </div>
+                <div>
+                    <h2>Gold Membership</h2>
+                    <p>
+                        ★Joining Fees:NT$33,000
+                        ★Training ✔️
+                        ★Special Event ✔️
+                        ★Spotlight Advertising ✔️
+                    </p>
+                </div>
+            </div>
+            <form class="hf" id="formwork" method="get" action="thankyou.html">
+                <label>First Name*<input type="text" name="fname" id="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" id="lname" required></label>
+                <label>Position<input type="text" pattern="[A-Za-z/s-]{7}" name="position" id="p"></label>
+                <label>Email*<input type="email" id="email" name="email" placeholder="someone@byui.edu"
+                        required></label>
+                <label>Mobile Phone Number<input type="tel" id="phone" name="phone" required></label>
+                <label>Business Name*<input type="text" name="bname" id="bname" required></label>
+                <label>Membership Level
+                    <select name="level">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="npm">NP Membership</option>
+                        <option value="bm">Bronze Membership</option>
+                        <option value="sm">Silver Membership</option>
+                        <option value="gm">Gold Membership</option>
+                    </select>
+                </label>
+                <label>Business Description<textarea name="description" id="bd"></textarea></label>
+                <label><input type="hidden" name="time" id="time"></label>
+                <input id="button" type="submit" value="Send My Application">
+            </form>
+        </section>
+        <!--<div>
             <table>
                 <thead>
                     <tr>
@@ -102,7 +144,7 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </div>-->
     </main>
     <footer>
         <p>No.1132 Zong Zeng Rd.Miao Li city Taiwan</p>

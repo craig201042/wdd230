@@ -369,3 +369,8 @@ section a {
 .banner p {
     color: black;
 }
+
+.member p {
+    font-family: var(--paragrah-font);
+    font-size: 1.2rem;
+}

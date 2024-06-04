@@ -17,8 +17,8 @@ const pic = document.querySelector("#advertise");
 const adtitle = document.querySelector("#title");
 let i = 0;
 const imageURLs = [
-    "https://craig201042.github.io/wdd230/chamber/images/everlight.png",
-    "https://craig201042.github.io/wdd230/chamber/images/everlight01.png",
+    "https://craig201042.github.io/wdd230/chamber/images/everlight.jpg",
+    "https://craig201042.github.io/wdd230/chamber/images/everlight2.jpeg",
     "https://craig201042.github.io/wdd230/chamber/images/sinbon.jpg",
     "https://craig201042.github.io/wdd230/chamber/images/sinbon2.webp"
 ];
